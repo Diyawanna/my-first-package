@@ -1,0 +1,24 @@
+{
+  "name": "@diyawanna/my-first-package",
+  "version": "1.0.0",
+  "description": "My first npm test package",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diyawanna/my-first-package.git"
+  },
+  "keywords": [
+    "#Diyawanna",
+    "#Test",
+    "#first"
+  ],
+  "author": "@wsmr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Diyawanna/my-first-package/issues"
+  },
+  "homepage": "https://github.com/Diyawanna/my-first-package#readme"
+}
