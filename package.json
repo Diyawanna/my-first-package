@@ -4,16 +4,16 @@
   "description": "My first npm test package",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "echo \"No tests yet\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Diyawanna/my-first-package.git"
+    "url": "https://github.com/Diyawanna/my-first-package.git"
   },
   "keywords": [
-    "#Diyawanna",
-    "#Test",
-    "#first"
+    "Diyawanna",
+    "Test",
+    "first"
   ],
   "author": "@wsmr",
   "license": "MIT",
