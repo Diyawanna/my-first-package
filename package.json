@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "My first npm test package",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"No tests yet\""
   },
