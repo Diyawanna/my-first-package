@@ -1,12 +1,11 @@
 <!-- 🧪 Step 1: Create Your Package Project
 
-mkdir my-first-package
-cd my-first-package
-npm init --scope=@diyawanna
+$ mkdir my-first-package
+$ cd my-first-package
+$ npm init --scope=@diyawanna
+
 Fill out the prompts (or use -y for default).
-
 This will create a package.json with a scoped name like "name": "@diyawanna/my-first-package"
-
 {
   "name": "@diyawanna/my-first-package",
   "version": "1.0.0",
@@ -31,10 +30,6 @@ This will create a package.json with a scoped name like "name": "@diyawanna/my-f
   },
   "homepage": "https://github.com/Diyawanna/my-first-package#readme"
 }
-
-
-
-
 
 ✍️ Step 2: Write Your Package Code
 Create a file called index.js:
@@ -65,84 +60,72 @@ Make sure your package.json looks something like this:
 }
 
 
-
-
 🔍 Step 4: Test the Package Locally (Optional)
 Before publishing, you can test it locally:
-npm link
+$ npm link
 
 In another project:
-npm link @diyawanna/my-first-package
+$ npm link @diyawanna/my-first-package
 
 Then use it like this:
 const { sayHello } = require('@diyawanna/my-first-package');
 console.log(sayHello("World"));
 
 
-
 **** SEE -> https://github.com/Diyawanna/my-first-package/commits/main/
-A.
-cd /path/to/my-first-package
-npm link
-B.
-cd /path/to/my-ionic-app
-npm link @diyawanna/my-first-package
-ionic serve
-C.
-import { sayHello } from '@diyawanna/my-first-package';
-console.log(sayHello('Diyawanna'));
+
+A.  $ cd /path/to/my-first-package
+    $ npm link
+   
+B.  $ cd /path/to/my-ionic-app
+    $ npm link @diyawanna/my-first-package
+    $ ionic serve
+    
+C.  import { sayHello } from '@diyawanna/my-first-package';
+    console.log(sayHello('Diyawanna'));
 
 If it's TypeScript, make sure to build it first:
-Add tsconfig.json if needed.
 
+Add tsconfig.json if needed.
 Build it:
-tsc
+$ tsc
+
 Then link the compiled output (dist/index.js or similar).
 
-D.
-If You Update the Package
-To see changes reflected in the app:
-Rebuild your package (e.g. tsc if using TS).
-It automatically updates in the linked project — no need to reinstall.
+D.  If You Update the Package
+    To see changes reflected in the app:
+    Rebuild your package (e.g. tsc if using TS).
+    It automatically updates in the linked project — no need to reinstall.
 
-E.
-When You’re Done
-To unlink and restore the original:
-cd /path/to/my-ionic-app
-npm unlink @diyawanna/my-first-package
-npm install  # to restore other packages if needed
-
-
-
+E.  When You’re Done
+    To unlink and restore the original:
+    $ cd /path/to/my-ionic-app
+    $ npm unlink @diyawanna/my-first-package
+    $ npm install  # to restore other packages if needed
 
 
 
 🚀 Step 5: Publish to NPM
 If it's a public package:
 
-npm publish --access public
+$ npm publish --access public
 🔐 Without --access public, scoped packages are private by default, which requires a paid plan.
-
-
 
 
 🧪 Step 6: Install & Use It Anywhere
 After publishing, try installing it from any project:
 
-npm i @diyawanna/my-first-package
+$ npm i @diyawanna/my-first-package
 Use it:
-
 const { sayHello } = require('@diyawanna/my-first-package');
 console.log(sayHello("Diyawanna"));
 
 
-
-
 ✅ Summary
 Step	Description
-npm init --scope=@diyawanna	Initializes a scoped package
-npm publish --access public	Publishes it under your npm profile
-npm i @diyawanna/your-package	How others will install it
+$ npm init --scope=@diyawanna	Initializes a scoped package
+$ npm publish --access public	Publishes it under your npm profile
+$ npm i @diyawanna/your-package	How others will install it
  -->
 
 
